@@ -1,6 +1,6 @@
 # 📝 Todo List App
 
-Bem-vindo ao **Todo List App**! Este é um projeto simples e funcional para gerenciar suas tarefas diárias, desenvolvido com foco em aprendizado e boas práticas utilizando **React.js** e **Redux Toolkit**. 🚀
+Oie, pessoa! **Todo List App** é um projeto simples e funcional para gerenciar suas tarefas diárias, desenvolvido com foco em aprendizado e boas práticas utilizando **React.js** e **Redux Toolkit**. 🚀
 
 ---
 
@@ -21,16 +21,7 @@ Bem-vindo ao **Todo List App**! Este é um projeto simples e funcional para gere
 - 🛠️ **Redux Toolkit**: Gerenciamento de estado simplificado e eficiente.
 - 🎨 **CSS Responsivo**: Design moderno e responsivo, com suporte para telas pequenas e grandes.
 
-### Ferramentas Adicionais
-
-- 🏗️ **Vite.js** (ou CRA): Para inicialização rápida do projeto.
-- 🧹 **ESLint/Prettier**: Para código limpo e padronizado (se configurado).
-
 ---
-
-## 📂 Estrutura do Projeto
-
-todo-list/ ├── public/ # Arquivos estáticos ├── src/ # Código-fonte │ ├── app/ # Configuração do Redux Store │ │ ├── store.js │ ├── features/ # Componentes principais e lógica da aplicação │ │ ├── todos/ │ │ │ ├── TodoSlice.js # Lógica de estado com Redux Toolkit │ │ │ ├── TodoList.js # Lista de tarefas │ │ │ ├── AddTodo.js # Componente para adicionar tarefa │ │ │ ├── TodoItem.js # Item individual com opções de editar/remover │ ├── App.js # Componente raiz │ ├── index.js # Ponto de entrada ├── package.json # Dependências do projeto
 
 ---
 
@@ -41,7 +32,19 @@ todo-list/ ├── public/ # Arquivos estáticos ├── src/ # Código-font
    git clone https://github.com/seu-usuario/todo-list.git
    cd todo-list
    ```
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+3. **Inicie o servidor de desenvolvimento**:
+   ```bash
+   npm start
+   ```
+4. **Abra no navegador**:
+   ```bash
+   Acesse: http://localhost:3000
+   ```
 
 ---
 
-Este README é bem estruturado, inclui emojis para maior clareza e apresenta o projeto de maneira profissional e convidativa `andrezadesousa` e `Andreza Sousa`😊
+Este README é bem estruturado, inclui emojis para maior clareza e apresenta o projeto de maneira profissional e convidativa, desenvolvido por `andrezadesousa` e `Andreza Sousa` e com o apoio do pai `Google`😊
