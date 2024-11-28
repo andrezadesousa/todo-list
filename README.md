@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# 📝 Todo List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Todo List App**! Este é um projeto simples e funcional para gerenciar suas tarefas diárias, desenvolvido com foco em aprendizado e boas práticas utilizando **React.js** e **Redux Toolkit**. 🚀
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Funcionalidades
 
-### `npm start`
+- ✅ Adicionar tarefas.
+- ✏️ Editar tarefas existentes.
+- ❌ Remover tarefas.
+- 📱 Totalmente responsivo para dispositivos móveis e desktops.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚛️ **React.js**: Framework JavaScript para criar interfaces de usuário dinâmicas.
+- 🛠️ **Redux Toolkit**: Gerenciamento de estado simplificado e eficiente.
+- 🎨 **CSS Responsivo**: Design moderno e responsivo, com suporte para telas pequenas e grandes.
 
-### `npm run build`
+### Ferramentas Adicionais
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🏗️ **Vite.js** (ou CRA): Para inicialização rápida do projeto.
+- 🧹 **ESLint/Prettier**: Para código limpo e padronizado (se configurado).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Estrutura do Projeto
 
-### `npm run eject`
+todo-list/ ├── public/ # Arquivos estáticos ├── src/ # Código-fonte │ ├── app/ # Configuração do Redux Store │ │ ├── store.js │ ├── features/ # Componentes principais e lógica da aplicação │ │ ├── todos/ │ │ │ ├── TodoSlice.js # Lógica de estado com Redux Toolkit │ │ │ ├── TodoList.js # Lista de tarefas │ │ │ ├── AddTodo.js # Componente para adicionar tarefa │ │ │ ├── TodoItem.js # Item individual com opções de editar/remover │ ├── App.js # Componente raiz │ ├── index.js # Ponto de entrada ├── package.json # Dependências do projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Como Executar o Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/todo-list.git
+   cd todo-list
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este README é bem estruturado, inclui emojis para maior clareza e apresenta o projeto de maneira profissional e convidativa `andrezadesousa` e `Andreza Sousa`😊
