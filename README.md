@@ -23,8 +23,6 @@ Oie, pessoa! **Todo List App** é um projeto simples e funcional para gerenciar 
 
 ---
 
----
-
 ## 🚀 Como Executar o Projeto
 
 1. **Clone o repositório**:
