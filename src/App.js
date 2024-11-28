@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AddTodo from "./features/todos/AddTodo";
+import TodoList from "./features/todos/TodoList";
+import "./App.css";
+import Avatar from "./assets/register.jpg";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app__container">
+      <img src={Avatar} alt="Avatar" className="app__image" />
+      <div className="app__content">
+        <h1 className="app__title">Todo List</h1>
+        <p className="app__text">
+          Olá, essa será sua Todo List, desenvolvida com ReactJS e Redux
+          Toolkit.{" "}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="app__form">
+          <AddTodo />
+          <TodoList />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
