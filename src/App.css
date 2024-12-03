@@ -1,141 +1,195 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
-
 :root {
   --header-height: 3.5rem;
-
   --body-font: "Playwrite DE Grund", cursive;
-
   --body-color: rgba(255, 255, 255, 1);
   --text-color: #424242;
   --text-color-light: hsl(0, 0%, 64%);
   --focus-color: #f88c70;
-
   --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.75rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
   --font-bold: 700;
-
-  --z-tooltip: 10;
-  --z-fixed: 100;
 }
-
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 4rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
 ul,
 li {
   list-style: none;
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4 {
+h1 {
   color: var(--text-color);
   font-weight: var(--font-bold);
 }
-
-img,
-video {
+img {
   max-width: 100%;
   height: auto;
 }
-
 .main {
   overflow: hidden;
 }
-
 .form {
   width: 100%;
   max-width: 500px;
 }
-
 .app__title {
   font-size: var(--biggest-font-size);
   color: var(--text-color);
   font-weight: var(--font-bold);
 }
-
 .app__container {
   display: grid;
   width: 100%;
   gap: 2rem;
 }
-
 .app__image {
   object-fit: cover;
   object-position: center;
   height: 400px;
   width: 100%;
 }
-
 .app__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 }
-
 .app__text {
   text-align: center;
   font-size: var(--normal-font-size);
   color: var(--text-color-light);
 }
-
+.add__container {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+.add__field {
+  position: relative;
+}
+.add__input {
+  border: 1px solid var(--focus-color);
+  padding: 1rem 1rem 1rem 4rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-weight: 500;
+  transition: focus-color 0.4s, box-shadow 0.4s;
+}
+.add__input::placeholder {
+  color: var(--text-color);
+}
+.add__label {
+  position: absolute;
+  left: 1.5rem;
+  top: -1.2rem;
+  background-color: var(--body-color);
+  padding: 2px;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+}
+.add__field::after {
+  content: "";
+  position: absolute;
+  height: 28px;
+  border: 1px solid var(--focus-color);
+  left: 3.75rem;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+}
+.pink__button {
+  background-color: var(--focus-color);
+  color: var(--body-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 500px;
+}
+.pink__button:hover {
+  opacity: 0.8;
+}
+.add__icon {
+  height: max-content;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+  color: var(--focus-color);
+}
+.item__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--focus-color);
+}
+.update__btn {
+  background-color: var(--focus-color);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--body-color);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.delete__btn,
+.save__btn {
+  background-color: red;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--body-color);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.save__btn {
+  background-color: var(--focus-color);
+}
 @media screen and (min-width: 1150px) {
   .app__container {
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
-
   .app__content {
     padding: 0 1rem;
     gap: 2rem;
   }
-
   .app__image {
     width: 100%;
     height: 100vh;
+  }
+  .add__input {
+    width: 500px;
   }
 }

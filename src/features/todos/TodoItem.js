@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleTodo, deleteTodo, editTodo } from "./TodoSlice"; //manipular o estado das tarefas
-import "./style.css";
 
 const TodoItem = ({ todo }) => {
   const dispatch = useDispatch();

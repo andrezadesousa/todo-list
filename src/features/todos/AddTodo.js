@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux"; //ele permite que a aplicação envie ações ao store
 import { addTodo } from "./TodoSlice"; //adicionará uma nova tarefa ao estado.
-import "./style.css";
 
 const AddTodo = () => {
   const [text, setText] = useState("");
